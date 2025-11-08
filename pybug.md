@@ -89,8 +89,8 @@ def determine_winner(user_choice, computer_choice):
 user_score = 0
 computer_score = 0
 
-def update_score(result)  # SYNTAX ERROR: missing colon
-global user_score  # INDENTATION ERROR: Not in function
+def update_score(result)
+global user_score
     global computer_score
     if result == "win":
         user_score = user_score + 1
@@ -103,9 +103,9 @@ global user_score  # INDENTATION ERROR: Not in function
 def display_score():
     total_rounds = user_score + computer_score
     print("=== GAME STATISTICS ===")
-    print("Total rounds played: " + total_rounds)  # TYPE ERROR: can't concatenate str/int
+    print("Total rounds played: " + total_rounds) 
     print("Your score: " + str(user_score))
-    print("Computer's score: " + str(comp_score))  # NAME ERROR: should be 'computer_score'
+    print("Computer's score: " + str(comp_score))  
     print("=======================")
 ```
 
@@ -130,3 +130,4 @@ def display_score():
 
 
 **Run your code, fix all errors, and check with your teacher when it's working end-to-end!**
+

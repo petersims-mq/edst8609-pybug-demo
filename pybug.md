@@ -62,20 +62,20 @@ def determine_winner(user_choice, computer_choice):
 
     if user_choice == computer_choice:
         print("It's a tie!")
-        winner = "tie"
+        result = "tie"
     elif user_choice == "rock" and computer_choice == "scissors":
         print("You win!")
-        winner = "win"
+        result = "win"
     elif user_choice == "paper" and computer_choice == "rock":
         print("You win!")
-        winner = "win"
+        result = "win"
     elif user_choice == "scissors" and computer_choice == "paper":
         print("You win!")
-        winner = "win"
+        result = "win"
     else:
         print("You lose!")
-        winner = "lose"
-    return resuLt  # NAME ERROR: should be 'winner'
+        result = "lose"
+    return winner  # NAME ERROR: should be 'result'
 ```
 
 ***
@@ -127,5 +127,6 @@ def display_score():
 - **NameError**: variable names spelled/used incorrectly
 
 ***
+
 
 **Run your code, fix all errors, and check with your teacher when it's working end-to-end!**
